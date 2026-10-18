@@ -1,0 +1,11 @@
+:root {
+    --primary: #6558f5;
+    --primary-hover: #5144e5;
+    --primary-light: #eeecff;
+    --text-primary: #17213a;
+    --text-secondary: #71809f;
+    --border: #dce3f2;
+    --background: #f6f8ff;
+    --white: #ffffff;
+    --shadow: 0 24px 80px rgba(76, 91, 180, 0.10);
+}
