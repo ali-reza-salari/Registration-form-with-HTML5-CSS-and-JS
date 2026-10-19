@@ -1,16 +1,25 @@
 {
-  "name": "1-login-form",
+  "name": "registration-form-with-html5-css-and-js",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ali-reza-salari/Registration-form-with-HTML5-CSS-and-JS.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/ali-reza-salari/Registration-form-with-HTML5-CSS-and-JS/issues"
+  },
+  "homepage": "https://github.com/ali-reza-salari/Registration-form-with-HTML5-CSS-and-JS#readme",
   "dependencies": {
-    "express.js": "^1.0.0"
+    "express": "^5.3.0",
+    "nodemon": "^3.1.14"
   }
 }

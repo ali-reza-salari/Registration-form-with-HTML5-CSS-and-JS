@@ -1,0 +1,40 @@
+.error-section {
+    position: absolute;
+    animation: error-box-animation__open 500ms ease forwards,
+    error-box-animation__close 500ms ease 2.5s forwards;
+    ;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hide-error {
+    display: none;
+}
+
+.error-section .error-box {
+    display: inline-block;
+    width: 500px;
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+@keyframes error-box-animation__open {
+    from {
+        top: -100px;
+    }
+    to {
+        top: 0;
+    }
+}
+@keyframes error-box-animation__close {
+    from {
+        top: 0;
+    }
+    to {
+        top: -100px;
+    }
+}

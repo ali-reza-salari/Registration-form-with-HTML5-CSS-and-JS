@@ -10,8 +10,8 @@ body {
     font-family: 'Inter', sans-serif;
     color: var(--text-primary);
     background:
-        radial-gradient(ellipse at 0% 0%, #eeedff 0%, transparent 40%),
-        radial-gradient(ellipse at 100% 100%, #e6f0ff 0%, transparent 40%),
+        radial-gradient(ellipse at 0% 0%, var(--primary) 0%, transparent 40%),
+        radial-gradient(ellipse at 100% 100%, var(--primary) 0%, transparent 40%),
         var(--background);
 }
 

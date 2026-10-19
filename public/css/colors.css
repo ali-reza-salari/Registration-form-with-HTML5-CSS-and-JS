@@ -9,3 +9,16 @@
     --white: #ffffff;
     --shadow: 0 24px 80px rgba(76, 91, 180, 0.10);
 }
+
+.error {
+    background: red;
+    color: white;
+}
+.warning {
+    background: darkgoldenrod;
+    color: black;
+}
+.success {
+    background: darkgreen;
+    color: white;
+}
