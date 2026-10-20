@@ -1,9 +1,21 @@
 import express from "express"
+import fs from "fs"
+import cors from "cors"
 
 const app = express()
 
-app.get("/" , (req , res) => {
-    res.send("Welcome")
+app.use(express.json())
+app.use(cors())
+
+app.post("/api/create-user" , (req , res) => {
+    const newUser = req.body
+    const usersFile = fs.readFileSync("./server/usersData.json", "utf-8")
+    const parsedUsers = JSON.parse(usersFile)
+
+    parsedUsers.push(newUser)
+    fs.writeFileSync("./server/usersData.json", JSON.stringify(parsedUsers, null, 4))
+
+    res.status(201).send("user creation successfully :))")
     res.end()
 })
 
